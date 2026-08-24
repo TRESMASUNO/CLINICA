@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto de Clínica | Servicios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mismo encabezado que index.html, solo cambia cuál <a> tiene aria-current -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2,15 H9 L12,6 L16,24 L19,10 L22,15 H28" stroke="#d64545" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Clínica Guadalupito
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="servicios.html" class="nav__link" aria-current="page">Servicios</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cabecera de la página: cambia la etiqueta, título y texto -->
+  <section class="hero page-hero">
+    <div class="container">
+      <div class="hero__content">
+        <span class="eyebrow">Lo que ofrecemos</span>
+        <h1 class="hero__title">Nuestros <span>servicios</span></h1>
+        <p class="hero__subtitle">
+          <!--descripcion general tipo de atencion y funcionalidades que daremos-->
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       LISTA DE SERVICIOS
+       Cada servicio es un bloque <li class="service-card">.
+       Para agregar uno más: copia un bloque completo y
+       cambia el ícono, el título y la descripción.
+  ====================================================== -->
+  <section class="section">
+    <div class="container">
+      <ul class="service-grid">
+
+        <li class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3>Nombre del servicio</h3>
+          <p>Descripción breve de en qué consiste este servicio y para quién es.</p>
+        </li>
+
+        <li class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 21s-7-4.35-9.5-9C.8 8.4 3 4 7 4c2 0 3.6 1.2 4.5 2.6C12.4 5.2 14 4 16 4c4 0 6.2 4.4 4.5 8-2.5 4.65-8.5 9-8.5 9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+          <h3>Nombre del servicio</h3>
+          <p>Descripción breve de en qué consiste este servicio y para quién es.</p>
+        </li>
+
+        <li class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Nombre del servicio</h3>
+          <p>Descripción breve de en qué consiste este servicio y para quién es.</p>
+        </li>
+
+        <li class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 3h9l3 3v15H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9 10h6M9 14h6M9 18h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <h3>Nombre del servicio</h3>
+          <p>Descripción breve de en qué consiste este servicio y para quién es.</p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <h3>Clínica Guadalupito</h3>
+        <p>Proyecto  [Taller de Programación Web].</p>
+      </div>
+      <div>
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <small>© 2026 Universidad Tecnologica Del Peru — Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
